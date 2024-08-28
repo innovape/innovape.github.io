@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap');
+
+body {
+    font-family: 'Averia Serif Libre', serif;
+    margin: 0;
+    padding: 0;
+    color: #2e4627;
+    zoom: 0.9; /* Further zoom out the entire page */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;  /* Fixed at the top */
+    width: 100%;  /* Ensure the header spans the full width */
+    z-index: 1000;  /* Ensure it stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: Add a shadow to distinguish the navbar */
+}
+
+body {
+    padding-top: 70px;  /* Add top padding to avoid content being hidden behind the fixed navbar */
+}
+
+header .logo img {
+    width: 220px;  /* Adjust width to slightly smaller */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;  /* Adjusted gap to move the links slightly left */
+    margin-right: 40px;  /* Moved the links slightly left by adjusting margin */
+    font-size: 28px; /* Decreased font size slightly */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2e4627;
+}
+
+section {
+    height: 100vh; /* Make each section take up the full viewport height */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Align content vertically (column layout) */
+    padding: 0 20px; /* Optional: Add padding to the sides */
+}
+
+.hero {
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: left; /* Align the text to the left */
+    height: 100vh; /* Make the hero section full viewport height */
+
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+    max-width: 1400px; /* Set a max-width to control the content width */
+    padding: 0 20px; /* Add padding on sides */
+}
+
+.hero h1 {
+    font-size: 60px; /* Adjust font size to be slightly smaller */
+    font-weight: bold;
+    color: #2e4627;
+    margin: 0; /* Reset margin */
+    line-height: 1.2; /* Adjust line height to control spacing between lines */
+    max-width: 700px; /* Increase the max-width of the text block */
+    margin-bottom: 30px; /* Increase space below the heading */
+    margin-right: 50px; 
+}
+
+.imagee-box {
+    width: 800px; /* Decreased width of the image */
+    height: 650px; /* Decreased height of the image */
+    background-image: url('front.jpg'); /* Replace with the correct path to your image */
+    background-size: cover; /* Ensure the image covers the entire box */
+    margin-left: -20px; /* Adjust left margin to align with text */
+    margin-bottom: 30px; /* Increase space below the heading */
+    border-radius: 30px; /* Add rounded edges */
+    flex-shrink: 0; /* Ensure the box doesn’t shrink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+}
+
+.mission {
+    background-image: url('mission.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image within the section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    text-align: center;
+    padding: 80px 20px; /* Adjust the padding as needed */
+    color: #fff; /* Change text color to white or another color for contrast */
+}
+
+.mission h2 {
+    font-size: 48px; /* Slightly decreased font size for the title */
+    font-weight: bold;
+    color: #f9f9f9;
+    margin-bottom: 30px; /* Space between title and subtitle */
+}
+
+.mission p {
+    font-size: 30px; /* Slightly decreased font size for the paragraph text */
+    line-height: 1.6;
+    color: #f9f9f9;
+    max-width: 1000px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the text */
+}
+
+.product {
+    background-color: #f7f7f7;
+    padding: 100px 20px; /* Reduced padding to decrease the space */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-bottom: 800px; /* Reduced space between Product and Team sections */
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Increase maximum width for the content */
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 0px; /* Reduce or remove right margin to move text left */
+    margin-left: -60px; /* Optional: Add negative margin to pull the text further left */
+    max-width: 60%; /* Adjust width to prevent stretching */
+    margin-top: -300px;
+}
+
+.text-content h2 {
+    font-size: 50px; /* Decreased the font size of the heading slightly */
+    font-weight: bold;
+    color: #2e4627;
+    font-family: 'Averia Serif Libre', serif;
+    margin-bottom: 30px; /* Increase space below the heading */
+    margin-right: 50px; 
+}
+
+.text-content p {
+    font-size: 28px; /* Decreased the font size of the paragraph slightly */
+    line-height: 1.8; /* Slightly increase line height for readability */
+    color: #2e4627;
+    font-family: 'Averia Serif Libre', serif;
+    margin-left: -60px; 
+    margin-right: 50px; 
+}
+
+.image-box {
+    width: 750px; /* Decreased the width */
+    height: 650px; /* Decreased the height */
+    background-image: url('create.jpg'); /* Use your image */
+    background-size: cover; /* Ensure the image covers the entire box */
+    background-position: center; /* Center the image */
+    flex-shrink: 0;
+    margin-left: -20px; /* Adjust left margin to align with text */
+    margin-bottom: 400px; /* Increase space below the heading */
+    margin-right: -200px; 
+}
+
+/* Updated Contact Section */
+.contact-section {
+    background: url('contactspic.jpg') no-repeat center center; /* Set background image */
+    background-size: cover; /* Cover the entire section */
+    padding: 80px 0;
+    text-align: center;
+    color: #fff; /* Ensure text is readable against the background */
+    margin-top: -1400;
+}
+
+.contact-title {
+    font-size: 60px; /* Slightly decreased font size for "Contact Us" */
+    font-weight: bold;
+    color: #fff; /* Ensure title is white */
+    margin-bottom: 70px; /* Space between title and cards */
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section .row {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Add spacing between the cards */
+}
+
+.contact-section .card {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for the cards */
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 95px 80px; /* Increased padding inside the cards */
+    flex: 1;
+    max-width: 100%; /* Ensure the cards fill the column width */
+    text-align: center;
+    min-height: 300px; /* Ensure both cards have the same minimum height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.contact-section .card-body {
+    padding: 40px;
+}
+
+.contact-section .card h4 {
+    color: #fff;
+    font-size: 32px; /* Decreased font size */
+    margin-bottom: 20px;
+}
+
+.contact-section .card .text-primary {
+    color: #ffdd57 !important; /* Yellow color for icons */
+    font-size: 34px; /* Slightly decreased icon size */
+}
+
+.contact-section hr.my-4 {
+    border-color: #fff;
+    border-width: 2px;
+    width: 200px; /* Increased width of the line */
+}
+
+.contact-section .small.text-black-50 {
+    font-size: 22px; /* Decreased font size slightly */
+    color: #fff; /* Ensure text is white */
+}
+
+.contact-section .small.text-black-50 a {
+    color: #ffdd57; /* Change link color to yellow */
+    text-decoration: none;
+}
+
+.contact-section .small.text-black-50 a:hover {
+    text-decoration: underline;
+}
+
+.contact-section .social a {
+    color: #ffdd57; /* Change social icon color to yellow */
+    font-size: 24px; /* Increase social icon size */
+    margin: 0 15px; /* Add more spacing between icons */
+}
+
+.contact-section .social a:hover {
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 15px;
+    font-size: 18px; /* Increased font size in form inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.contact form button {
+    background-color: #2e4627;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Increase button text size */
+}
+
+.contact-info {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Problem Section */
+.problem {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 80px 20px; /* Adjust the padding as needed */
+    color: #dddada; /* Change text color to white or another color for contrast */
+    margin-bottom: -250px; 
+    margin-top: 0px;
+}
+
+.problem h2 {
+    font-size: 58px; /* Slightly decreased font size */
+    font-weight: bold;
+    color: #2e4627; /* Matching the color theme */
+    margin-bottom: 100px; /* Space below the heading */
+    font-family: 'Averia Serif Libre', serif;
+    margin-top: -190px;
+}
+
+.problem-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px; /* Increased gap between the cards */
+    max-width: 1600px;
+    margin: 0 auto; /* Center the cards container */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.card {
+    background-color: #dce6dc; /* Lighter green color for a softer look */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners for a softer appearance */
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 450px; /* Set a max-width to maintain consistent size */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card p {
+    font-size: 24px; /* Slightly decreased font size */
+    line-height: 1.6;
+    color: #2e4627;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+/* Team Section */
+.team {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0; /* Reduced padding to decrease space */
+    margin-top: -1200px; /* Reduced space between Team and Solution sections */
+    margin-bottom: -200px; 
+}
+
+.team h2 {
+    font-size: 38px; /* Slightly decreased font size */
+    font-weight: bold;
+    color: #2e4627;
+    margin-bottom: 50px; /* Added more space below the heading */
+    margin-top: 0;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center; /* Center the team cards */
+    align-items: center;
+    gap: 40px; /* Increased gap between the cards */
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    margin-bottom: 200px;
+}
+
+.team-member {
+    flex: 1;
+    max-width: 250px; /* Increased the max-width for larger team member cards */
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;  /* Increased the size of the images */
+    height: 200px; /* Increased the size of the images */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #e3e3d3;
+}
+
+.team-member h3 {
+    margin: 15px 0 10px 0;
+    color: #2e4627;
+    font-size: 24px; /* Slightly decreased font size */
+    font-weight: bold;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 20px; /* Increased the font size for titles */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 25px;
+    }
+    
+    .hero h1 {
+        font-size: 6vw; /* Adjusted for smaller screens */
+    }
+    
+    .imagee-box {
+        width: 90%; /* Adjust the image box size for smaller screens */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .text-content, .image-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .team-cards, .problem-cards, .contact-section .row {
+        flex-direction: column;
+    }
+    
+    .contact-section .card, .problem-cards .card, .team-cards .team-member {
+        max-width: 100%; /* Make cards full width */
+    }
+    
+    .mission h2, .contact-title {
+        font-size: 2.5em;
+    }
+    
+    .text-content h2, .problem h2 {
+        font-size: 2.5em;
+    }
+    
+    .team h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        font-size: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 7vw; /* Adjust for very small screens */
+    }
+    
+    .imagee-box, .image-box {
+        width: 100%;
+        height: auto;
+    }
+    
+    .text-content {
+        margin-top: 0;
+        max-width: 100%;
+    }
+    
+    .mission h2, .contact-title {
+        font-size: 2em;
+    }
+    
+    .text-content h2, .problem h2 {
+        font-size: 2em;
+    }
+    
+    .team h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 8vw; /* Further adjust for very small screens */
+    }
+    
+    .imagee-box, .image-box {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .text-content, .mission p {
+        padding: 0 10px;
+    }
+}
