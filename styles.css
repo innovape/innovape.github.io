@@ -37,12 +37,6 @@ nav ul {
     font-size: 28px;
 }
 
-
-.hidden-nav {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
 nav ul li a {
     text-decoration: none;
     color: #2e4627;
