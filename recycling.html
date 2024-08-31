@@ -45,5 +45,24 @@
             </div>
         </div>
     </section>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            navbar.classList.add('hidden-nav');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('hidden-nav');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+</script>
+
 </body>
 </html>
