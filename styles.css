@@ -41,6 +41,77 @@ nav ul li a {
     text-decoration: none;
     color: #2e4627;
 }
+.recycling {
+    padding: 540px 20px; /* Increased padding for more vertical space */
+    background-color: #eef4ef;
+    text-align: center;
+    min-height: 120vh; /* Increased height to ensure all content fits */
+}
+
+.recycling h2 {
+    font-size: 48px;
+    color: #2e4627;
+    margin-bottom: 60px;
+}
+
+.recycling p {
+    font-size: 28px;
+    color: #2e4627;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.recycling-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* More space between the steps */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    background-color: #ffffff;
+    padding: 60px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px; /* Increased margin to ensure all content fits */
+}
+
+.step h3 {
+    font-size: 32px;
+    color: #2e4627;
+    margin-bottom: 30px;
+}
+
+.step p {
+    font-size: 24px;
+    color: #2e4627;
+    line-height: 1.8;
+}
+
+body {
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+/* Optional: Add a background image or color to the section to make it visually distinct */
+.recycling {
+    background-image: url('recycling-bg.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
 
 /* Hidden Navbar on Scroll */
 .hidden-nav {
