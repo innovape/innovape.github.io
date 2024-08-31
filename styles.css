@@ -17,6 +17,7 @@ body {
     background-color: #eef4ef;
     text-align: center;
     min-height: 120vh; /* Increased height to ensure all content fits */
+    margin-top: -360px;
 }
 
 .recycling h2 {
